@@ -1,0 +1,106 @@
+{
+  "format_version": "1.2",
+  "terraform_version": "1.5.0",
+  "planned_values": {
+    "root_module": {
+      "resources": [
+        {
+          "address": "aws_s3_bucket.bad_bucket",
+          "mode": "managed",
+          "type": "aws_s3_bucket",
+          "name": "bad_bucket",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 0,
+          "values": {
+            "bucket": "my-public-data",
+            "acl": "public-read"
+          }
+        },
+        {
+          "address": "aws_s3_bucket_public_access_block.bad_bucket_pab",
+          "mode": "managed",
+          "type": "aws_s3_bucket_public_access_block",
+          "name": "bad_bucket_pab",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 0,
+          "values": {
+            "bucket": "my-public-data",
+            "block_public_acls": false,
+            "block_public_policy": false,
+            "ignore_public_acls": false,
+            "restrict_public_buckets": false
+          }
+        },
+        {
+          "address": "aws_iam_policy.bad_policy",
+          "mode": "managed",
+          "type": "aws_iam_policy",
+          "name": "bad_policy",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 0,
+          "values": {
+            "name": "super_admin",
+            "policy": "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Action\":\"*\",\"Effect\":\"Allow\",\"Resource\":\"*\"}]}"
+          }
+        },
+        {
+          "address": "aws_db_instance.bad_db",
+          "mode": "managed",
+          "type": "aws_db_instance",
+          "name": "bad_db",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "allocated_storage": 20,
+            "engine": "postgres",
+            "instance_class": "db.t3.micro",
+            "storage_encrypted": false
+          }
+        }
+      ]
+    }
+  },
+  "resource_changes": [
+    {
+      "address": "aws_s3_bucket.bad_bucket",
+      "mode": "managed",
+      "type": "aws_s3_bucket",
+      "name": "bad_bucket",
+      "provider_name": "registry.terraform.io/hashicorp/aws",
+      "change": {
+        "actions": ["create"],
+        "after": {
+          "bucket": "my-public-data",
+          "acl": "public-read"
+        }
+      }
+    },
+    {
+      "address": "aws_iam_policy.bad_policy",
+      "mode": "managed",
+      "type": "aws_iam_policy",
+      "name": "bad_policy",
+      "provider_name": "registry.terraform.io/hashicorp/aws",
+      "change": {
+        "actions": ["create"],
+        "after": {
+          "name": "super_admin",
+          "policy": "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Action\":\"*\",\"Effect\":\"Allow\",\"Resource\":\"*\"}]}"
+        }
+      }
+    },
+    {
+      "address": "aws_db_instance.bad_db",
+      "mode": "managed",
+      "type": "aws_db_instance",
+      "name": "bad_db",
+      "provider_name": "registry.terraform.io/hashicorp/aws",
+      "change": {
+        "actions": ["create"],
+        "after": {
+          "storage_encrypted": false
+        }
+      }
+    }
+  ]
+}

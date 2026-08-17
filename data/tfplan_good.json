@@ -1,0 +1,91 @@
+{
+  "format_version": "1.2",
+  "terraform_version": "1.5.0",
+  "planned_values": {
+    "root_module": {
+      "resources": [
+        {
+          "address": "aws_s3_bucket.good_bucket",
+          "mode": "managed",
+          "type": "aws_s3_bucket",
+          "name": "good_bucket",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 0,
+          "values": {
+            "bucket": "my-private-data",
+            "acl": "private"
+          }
+        },
+        {
+          "address": "aws_iam_policy.good_policy",
+          "mode": "managed",
+          "type": "aws_iam_policy",
+          "name": "good_policy",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 0,
+          "values": {
+            "name": "limited_user",
+            "policy": "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Action\":[\"s3:GetObject\"],\"Effect\":\"Allow\",\"Resource\":[\"arn:aws:s3:::my-private-data/*\"]}]}"
+          }
+        },
+        {
+          "address": "aws_db_instance.good_db",
+          "mode": "managed",
+          "type": "aws_db_instance",
+          "name": "good_db",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "allocated_storage": 20,
+            "engine": "postgres",
+            "instance_class": "db.t3.micro",
+            "storage_encrypted": true
+          }
+        }
+      ]
+    }
+  },
+  "resource_changes": [
+    {
+      "address": "aws_s3_bucket.good_bucket",
+      "mode": "managed",
+      "type": "aws_s3_bucket",
+      "name": "good_bucket",
+      "provider_name": "registry.terraform.io/hashicorp/aws",
+      "change": {
+        "actions": ["create"],
+        "after": {
+          "bucket": "my-private-data",
+          "acl": "private"
+        }
+      }
+    },
+    {
+      "address": "aws_iam_policy.good_policy",
+      "mode": "managed",
+      "type": "aws_iam_policy",
+      "name": "good_policy",
+      "provider_name": "registry.terraform.io/hashicorp/aws",
+      "change": {
+        "actions": ["create"],
+        "after": {
+          "name": "limited_user",
+          "policy": "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Action\":[\"s3:GetObject\"],\"Effect\":\"Allow\",\"Resource\":[\"arn:aws:s3:::my-private-data/*\"]}]}"
+        }
+      }
+    },
+    {
+      "address": "aws_db_instance.good_db",
+      "mode": "managed",
+      "type": "aws_db_instance",
+      "name": "good_db",
+      "provider_name": "registry.terraform.io/hashicorp/aws",
+      "change": {
+        "actions": ["create"],
+        "after": {
+          "storage_encrypted": true
+        }
+      }
+    }
+  ]
+}
