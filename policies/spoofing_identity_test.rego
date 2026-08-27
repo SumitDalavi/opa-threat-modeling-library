@@ -1,4 +1,6 @@
 package spoofing_test
+import future.keywords.if
+import future.keywords.in
 import data.spoofing
 
 test_deny_wildcard_principal if {

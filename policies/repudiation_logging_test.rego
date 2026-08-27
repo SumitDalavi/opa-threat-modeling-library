@@ -1,4 +1,6 @@
 package repudiation_test
+import future.keywords.if
+import future.keywords.in
 import data.repudiation
 
 test_deny_cloudtrail_disabled if {

@@ -1,4 +1,6 @@
 package dos_test
+import future.keywords.if
+import future.keywords.in
 import data.dos
 
 test_deny_pod_no_limits if {
