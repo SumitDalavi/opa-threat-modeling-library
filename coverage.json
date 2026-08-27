@@ -1,0 +1,568 @@
+{
+  "files": {
+    "policies\\dos_resource_limits.rego": {
+      "covered": [
+        {
+          "start": {
+            "row": 9
+          },
+          "end": {
+            "row": 13
+          }
+        },
+        {
+          "start": {
+            "row": 17
+          },
+          "end": {
+            "row": 20
+          }
+        }
+      ],
+      "not_covered": [
+        {
+          "start": {
+            "row": 24
+          },
+          "end": {
+            "row": 27
+          }
+        }
+      ],
+      "covered_lines": 9,
+      "not_covered_lines": 4,
+      "coverage": 69.23076923076923
+    },
+    "policies\\dos_resource_limits_test.rego": {
+      "covered": [
+        {
+          "start": {
+            "row": 6
+          },
+          "end": {
+            "row": 7
+          }
+        },
+        {
+          "start": {
+            "row": 13
+          },
+          "end": {
+            "row": 14
+          }
+        },
+        {
+          "start": {
+            "row": 22
+          },
+          "end": {
+            "row": 23
+          }
+        }
+      ],
+      "covered_lines": 6,
+      "coverage": 100
+    },
+    "policies\\elevation_of_privilege_iam.rego": {
+      "covered": [
+        {
+          "start": {
+            "row": 5
+          },
+          "end": {
+            "row": 7
+          }
+        },
+        {
+          "start": {
+            "row": 12
+          },
+          "end": {
+            "row": 13
+          }
+        },
+        {
+          "start": {
+            "row": 16
+          },
+          "end": {
+            "row": 17
+          }
+        },
+        {
+          "start": {
+            "row": 19
+          },
+          "end": {
+            "row": 21
+          }
+        },
+        {
+          "start": {
+            "row": 23
+          },
+          "end": {
+            "row": 23
+          }
+        },
+        {
+          "start": {
+            "row": 28
+          },
+          "end": {
+            "row": 28
+          }
+        },
+        {
+          "start": {
+            "row": 30
+          },
+          "end": {
+            "row": 31
+          }
+        },
+        {
+          "start": {
+            "row": 33
+          },
+          "end": {
+            "row": 34
+          }
+        }
+      ],
+      "not_covered": [
+        {
+          "start": {
+            "row": 27
+          },
+          "end": {
+            "row": 27
+          }
+        },
+        {
+          "start": {
+            "row": 35
+          },
+          "end": {
+            "row": 35
+          }
+        },
+        {
+          "start": {
+            "row": 37
+          },
+          "end": {
+            "row": 37
+          }
+        }
+      ],
+      "covered_lines": 16,
+      "not_covered_lines": 3,
+      "coverage": 84.21052631578948
+    },
+    "policies\\elevation_of_privilege_iam_test.rego": {
+      "covered": [
+        {
+          "start": {
+            "row": 3
+          },
+          "end": {
+            "row": 4
+          }
+        },
+        {
+          "start": {
+            "row": 17
+          },
+          "end": {
+            "row": 17
+          }
+        },
+        {
+          "start": {
+            "row": 20
+          },
+          "end": {
+            "row": 21
+          }
+        },
+        {
+          "start": {
+            "row": 34
+          },
+          "end": {
+            "row": 34
+          }
+        }
+      ],
+      "covered_lines": 6,
+      "coverage": 100
+    },
+    "policies\\iam.rego": {
+      "not_covered": [
+        {
+          "start": {
+            "row": 3
+          },
+          "end": {
+            "row": 3
+          }
+        },
+        {
+          "start": {
+            "row": 5
+          },
+          "end": {
+            "row": 10
+          }
+        }
+      ],
+      "not_covered_lines": 7
+    },
+    "policies\\information_disclosure_s3.rego": {
+      "covered": [
+        {
+          "start": {
+            "row": 6
+          },
+          "end": {
+            "row": 7
+          }
+        },
+        {
+          "start": {
+            "row": 10
+          },
+          "end": {
+            "row": 12
+          }
+        },
+        {
+          "start": {
+            "row": 17
+          },
+          "end": {
+            "row": 20
+          }
+        },
+        {
+          "start": {
+            "row": 24
+          },
+          "end": {
+            "row": 25
+          }
+        }
+      ],
+      "not_covered": [
+        {
+          "start": {
+            "row": 23
+          },
+          "end": {
+            "row": 23
+          }
+        },
+        {
+          "start": {
+            "row": 26
+          },
+          "end": {
+            "row": 26
+          }
+        }
+      ],
+      "covered_lines": 11,
+      "not_covered_lines": 2,
+      "coverage": 84.61538461538461
+    },
+    "policies\\information_disclosure_s3_test.rego": {
+      "covered": [
+        {
+          "start": {
+            "row": 3
+          },
+          "end": {
+            "row": 4
+          }
+        },
+        {
+          "start": {
+            "row": 17
+          },
+          "end": {
+            "row": 17
+          }
+        },
+        {
+          "start": {
+            "row": 20
+          },
+          "end": {
+            "row": 21
+          }
+        },
+        {
+          "start": {
+            "row": 34
+          },
+          "end": {
+            "row": 34
+          }
+        }
+      ],
+      "covered_lines": 6,
+      "coverage": 100
+    },
+    "policies\\network.rego": {
+      "not_covered": [
+        {
+          "start": {
+            "row": 3
+          },
+          "end": {
+            "row": 3
+          }
+        },
+        {
+          "start": {
+            "row": 5
+          },
+          "end": {
+            "row": 7
+          }
+        }
+      ],
+      "not_covered_lines": 4
+    },
+    "policies\\repudiation_logging.rego": {
+      "covered": [
+        {
+          "start": {
+            "row": 9
+          },
+          "end": {
+            "row": 12
+          }
+        },
+        {
+          "start": {
+            "row": 24
+          },
+          "end": {
+            "row": 27
+          }
+        }
+      ],
+      "not_covered": [
+        {
+          "start": {
+            "row": 16
+          },
+          "end": {
+            "row": 20
+          }
+        }
+      ],
+      "covered_lines": 8,
+      "not_covered_lines": 5,
+      "coverage": 61.53846153846154
+    },
+    "policies\\repudiation_logging_test.rego": {
+      "covered": [
+        {
+          "start": {
+            "row": 6
+          },
+          "end": {
+            "row": 7
+          }
+        },
+        {
+          "start": {
+            "row": 13
+          },
+          "end": {
+            "row": 14
+          }
+        },
+        {
+          "start": {
+            "row": 20
+          },
+          "end": {
+            "row": 21
+          }
+        }
+      ],
+      "covered_lines": 6,
+      "coverage": 100
+    },
+    "policies\\spoofing_identity.rego": {
+      "covered": [
+        {
+          "start": {
+            "row": 9
+          },
+          "end": {
+            "row": 14
+          }
+        },
+        {
+          "start": {
+            "row": 18
+          },
+          "end": {
+            "row": 24
+          }
+        },
+        {
+          "start": {
+            "row": 28
+          },
+          "end": {
+            "row": 28
+          }
+        },
+        {
+          "start": {
+            "row": 31
+          },
+          "end": {
+            "row": 33
+          }
+        }
+      ],
+      "not_covered": [
+        {
+          "start": {
+            "row": 27
+          },
+          "end": {
+            "row": 27
+          }
+        }
+      ],
+      "covered_lines": 17,
+      "not_covered_lines": 1,
+      "coverage": 94.44444444444444
+    },
+    "policies\\spoofing_identity_test.rego": {
+      "covered": [
+        {
+          "start": {
+            "row": 6
+          },
+          "end": {
+            "row": 7
+          }
+        },
+        {
+          "start": {
+            "row": 12
+          },
+          "end": {
+            "row": 13
+          }
+        }
+      ],
+      "covered_lines": 4,
+      "coverage": 100
+    },
+    "policies\\tampering_rds_encryption.rego": {
+      "covered": [
+        {
+          "start": {
+            "row": 5
+          },
+          "end": {
+            "row": 7
+          }
+        },
+        {
+          "start": {
+            "row": 12
+          },
+          "end": {
+            "row": 15
+          }
+        },
+        {
+          "start": {
+            "row": 18
+          },
+          "end": {
+            "row": 21
+          }
+        },
+        {
+          "start": {
+            "row": 24
+          },
+          "end": {
+            "row": 25
+          }
+        }
+      ],
+      "covered_lines": 13,
+      "coverage": 100
+    },
+    "policies\\tampering_rds_encryption_test.rego": {
+      "covered": [
+        {
+          "start": {
+            "row": 3
+          },
+          "end": {
+            "row": 4
+          }
+        },
+        {
+          "start": {
+            "row": 17
+          },
+          "end": {
+            "row": 17
+          }
+        },
+        {
+          "start": {
+            "row": 20
+          },
+          "end": {
+            "row": 21
+          }
+        },
+        {
+          "start": {
+            "row": 34
+          },
+          "end": {
+            "row": 34
+          }
+        },
+        {
+          "start": {
+            "row": 37
+          },
+          "end": {
+            "row": 38
+          }
+        },
+        {
+          "start": {
+            "row": 51
+          },
+          "end": {
+            "row": 51
+          }
+        }
+      ],
+      "covered_lines": 9,
+      "coverage": 100
+    }
+  },
+  "covered_lines": 111,
+  "not_covered_lines": 26,
+  "coverage": 81.02189781021897
+}

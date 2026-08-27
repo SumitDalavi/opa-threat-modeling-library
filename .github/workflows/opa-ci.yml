@@ -2,7 +2,7 @@ name: OPA STRIDE Policy Tests
 
 on:
   push:
-    branches: [main]
+    branches: [master]
   pull_request:
     paths:
       - 'policies/**'
@@ -33,7 +33,4 @@ jobs:
           "
 
       - name: Validate policy files
-        run: |
-          for f in policies/*.rego; do
-            opa check "$f" && echo "OK: $f" || exit 1
-          done
+        run: opa check policies/
