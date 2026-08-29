@@ -22,6 +22,8 @@ jobs:
       - name: Run all OPA tests
         run: opa test policies/ -v --explain fails
 
+      # The required test coverage threshold is 80%.
+      # Any coverage below this value indicates missing threat coverage and will fail the build.
       - name: Check coverage >= 80%
         run: |
           opa test policies/ --coverage --format=json | python3 -c "
