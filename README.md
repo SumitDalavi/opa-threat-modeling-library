@@ -1,6 +1,7 @@
 # OPA Threat Modeling Library
 
-A portfolio project demonstrating how to scale threat modeling by translating STRIDE concepts (Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, Elevation of Privilege) into automated Infrastructure-as-Code checks using Open Policy Agent (OPA) and Rego.
+> **Maturity:** Lab / Reference Implementation
+> _A portfolio project demonstrating how to scale threat modeling by translating STRIDE concepts into automated Infrastructure-as-Code checks using Open Policy Agent (OPA) and Rego._
 
 ## The Problem
 Manual threat modeling (using tools like Threat Dragon or physical whiteboards) does not scale to modern CI/CD pipelines. Security teams cannot review every single Terraform pull request to determine if it introduces an "Elevation of Privilege" or "Information Disclosure" threat.
@@ -81,8 +82,24 @@ opa eval -d policies/ -i data/tfplan_bad.json "data.terraform.analysis.deny"
 | Bad Plan | Returns 3 specific violation strings corresponding to the STRIDE policies. |
 | Good Plan | Returns an empty array `[]` (no violations). |
 
+## 📚 Documentation
+
+- [Architecture](docs/architecture.md) — How OPA integrates with Terraform
+- [STRIDE Catalogue](docs/STRIDE-CATALOGUE.md) — Mapping OPA fixtures to STRIDE threat models
+- [Runbook](docs/runbook.md) — How to run evaluations locally
+- [Decisions](docs/decisions.md) — ADRs for Policy-as-Code
+- [Changelog](docs/changelog.md) — Change history
+
+## Mock Boundaries (Honest Scope)
+
+| What | Status | Details |
+|---|---|---|
+| OPA Engine | **Real** | Executing actual Rego policies against JSON inputs using the real OPA binary/container. |
+| Terraform Plans | **Mocked** | Using static JSON files (`data/tfplan_bad.json`) rather than dynamically generating them via `terraform plan -out`. |
+| CI Pipeline | **Real** | A GitHub Actions workflow is provided to demonstrate automated `opa test --coverage`. |
+
 ## Author
 
 **Sumit Dalavi — Senior DevSecOps / Platform Engineer**
-- [GitHub](https://github.com/your-username)
-- [LinkedIn](https://linkedin.com/in/your-profile)
+- [GitHub](https://github.com/SumitDalavi)
+- [LinkedIn](https://in.linkedin.com/in/sumit-dalavi-762838129)
