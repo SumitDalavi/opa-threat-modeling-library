@@ -1,8 +1,10 @@
 # OPA Threat Modeling Library
 
-[![Release](https://img.shields.io/github/v/release/SumitDalavi/opa-threat-modeling-library)](https://github.com/SumitDalavi/opa-threat-modeling-library/releases)
+[![CI Pipeline](https://github.com/SumitDalavi/opa-threat-modeling-library/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/SumitDalavi/opa-threat-modeling-library/actions/workflows/ci.yml)
+[![Release](https://img.shields.io/github/v/release/SumitDalavi/opa-threat-modeling-library?color=0969da&label=release&logo=github)](https://github.com/SumitDalavi/opa-threat-modeling-library/releases)
 [![Release Workflow](https://github.com/SumitDalavi/opa-threat-modeling-library/actions/workflows/release.yml/badge.svg)](https://github.com/SumitDalavi/opa-threat-modeling-library/actions/workflows/release.yml)
-
+[![SBOM](https://img.shields.io/badge/SBOM-SPDX%202.3-blueviolet?logo=spdx)](https://github.com/SumitDalavi/opa-threat-modeling-library/releases/tag/v0.2.0)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 > **Maturity:** Lab / Reference Implementation
 > _A portfolio project demonstrating how to scale threat modeling by translating STRIDE concepts into automated Infrastructure-as-Code checks using Open Policy Agent (OPA) and Rego._
@@ -104,7 +106,6 @@ Integrate policy evaluations directly into pull request pipelines.
 ### Tier 3: Production Admission & Policy Enforcement
 Deploy threat modeling policies to live cluster admission webhooks or central policy engines.
 - **Distribution:** Download verified release bundles and SPDX SBOM (`sbom.spdx.json`) from [GitHub Releases](https://github.com/SumitDalavi/opa-threat-modeling-library/releases).
-
 
 ## 📚 Documentation
 
