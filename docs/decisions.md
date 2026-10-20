@@ -14,3 +14,10 @@ We selected Open Policy Agent (Rego) over simpler scanners like tfsec or checkov
 - ✅ Allows writing highly specific, custom rules (e.g. enforcing specific labeling structures).
 - ✅ OPA is tool-agnostic (can evaluate Kubernetes YAML, Terraform JSON, API payloads).
 - ⚠️ Rego has a steep learning curve compared to YAML-based policy engines.
+
+## ADR-002: Multi-Tier Verification & OCI Dual Distribution
+- **Context:** Declarative infrastructure and policy catalogs required robust local simulation gates without imposing cloud provider dependencies or credentials during CI/CD.
+- **Decision:** Establish a strict 3-tier verification model (offline linting → sandbox cluster test → GitOps deployment) and distribute validated release packages with SBOMs and OCI container/chart registries.
+- **Consequences:** 
+  - *Pros:* Zero cloud credentials required for CI validation; verifiable supply-chain integrity via Syft SBOMs.
+  - *Cons:* Requires maintaining local test fixtures and mock plan inputs.
