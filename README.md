@@ -6,8 +6,7 @@
 [![SBOM](https://img.shields.io/badge/SBOM-SPDX%202.3-blueviolet?logo=spdx)](https://github.com/SumitDalavi/opa-threat-modeling-library/releases/tag/v0.2.0)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
-> **Maturity:** Lab / Reference Implementation
-> _A portfolio project demonstrating how to scale threat modeling by translating STRIDE concepts into automated Infrastructure-as-Code checks using Open Policy Agent (OPA) and Rego._
+> Automated threat modeling library translating STRIDE security concepts into automated Infrastructure-as-Code checks using Open Policy Agent (OPA) and Rego.
 
 ## The Problem
 Manual threat modeling (using tools like Threat Dragon or physical whiteboards) does not scale to modern CI/CD pipelines. Security teams cannot review every single Terraform pull request to determine if it introduces an "Elevation of Privilege" or "Information Disclosure" threat.
